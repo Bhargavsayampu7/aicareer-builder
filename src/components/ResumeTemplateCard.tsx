@@ -19,12 +19,12 @@ const ResumeTemplateCard = ({
   return (
     <div 
       className={cn(
-        "resume-template p-4 rounded-lg border border-border bg-card transition-all duration-300",
-        active ? "ring-2 ring-resume-primary shadow-lg" : "hover:shadow-md"
+        "resume-template p-4 rounded-lg border border-border bg-card transition-all duration-300 cursor-pointer",
+        active ? "ring-2 ring-resume-primary shadow-lg" : "hover:shadow-md hover:border-resume-primary"
       )}
       onClick={onClick}
     >
-      <div className="aspect-[8.5/11] overflow-hidden rounded-md mb-4">
+      <div className="aspect-[8.5/11] overflow-hidden rounded-md mb-4 bg-gray-50">
         <img 
           src={image} 
           alt={`${name} template`} 

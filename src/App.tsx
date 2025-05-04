@@ -9,6 +9,9 @@ import Technical from "./pages/Technical";
 import Templates from "./pages/Templates";
 import FresherResume from "./pages/FresherResume";
 import ExperiencedResume from "./pages/ExperiencedResume";
+import FresherTemplates from "./pages/FresherTemplates";
+import ExperiencedTemplates from "./pages/ExperiencedTemplates";
+import IndustryTemplates from "./pages/IndustryTemplates";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +28,9 @@ const App = () => (
           <Route path="/templates" element={<Templates />} />
           <Route path="/fresher" element={<FresherResume />} />
           <Route path="/experienced" element={<ExperiencedResume />} />
+          <Route path="/fresher-templates" element={<FresherTemplates />} />
+          <Route path="/experienced-templates" element={<ExperiencedTemplates />} />
+          <Route path="/industry/:industryId" element={<IndustryTemplates />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

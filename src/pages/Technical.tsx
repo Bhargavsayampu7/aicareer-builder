@@ -26,9 +26,9 @@ const Technical = () => {
                 <p className="text-muted-foreground mb-6">
                   Perfect for students or recent graduates with limited or no professional experience.
                 </p>
-                <Link to="/fresher">
+                <Link to="/fresher-templates">
                   <Button size="lg" className="bg-resume-primary hover:bg-resume-secondary w-full">
-                    Create Fresher Resume
+                    Choose Fresher Template
                   </Button>
                 </Link>
               </div>
@@ -39,9 +39,9 @@ const Technical = () => {
                 <p className="text-muted-foreground mb-6">
                   Designed for professionals with work experience seeking to highlight their career achievements.
                 </p>
-                <Link to="/experienced">
+                <Link to="/experienced-templates">
                   <Button size="lg" className="bg-resume-primary hover:bg-resume-secondary w-full">
-                    Create Experienced Resume
+                    Choose Experienced Template
                   </Button>
                 </Link>
               </div>
