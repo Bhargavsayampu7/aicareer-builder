@@ -12,6 +12,7 @@ import ExperiencedResume from "./pages/ExperiencedResume";
 import FresherTemplates from "./pages/FresherTemplates";
 import ExperiencedTemplates from "./pages/ExperiencedTemplates";
 import IndustryTemplates from "./pages/IndustryTemplates";
+import BuildIndustryResume from "./pages/BuildIndustryResume";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/fresher-templates" element={<FresherTemplates />} />
           <Route path="/experienced-templates" element={<ExperiencedTemplates />} />
           <Route path="/industry/:industryId" element={<IndustryTemplates />} />
+          <Route path="/build/:industryId/:templateId" element={<BuildIndustryResume />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
