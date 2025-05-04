@@ -13,8 +13,11 @@ const Header = () => {
           <Link to="/">
             <Button variant="ghost">Home</Button>
           </Link>
+          <Link to="/technical">
+            <Button variant="ghost">Technical</Button>
+          </Link>
           <Link to="/templates">
-            <Button variant="ghost">Templates</Button>
+            <Button variant="ghost">Non-Technical</Button>
           </Link>
           <Link to="/fresher">
             <Button variant="ghost">Fresher</Button>

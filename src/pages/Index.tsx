@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { User, Briefcase } from "lucide-react";
+import { User, Briefcase, Wrench, Hotel } from "lucide-react";
 
 const Index = () => {
   return (
@@ -22,16 +22,16 @@ const Index = () => {
                 Create a professional, ATS-optimized resume in minutes with our AI-assisted resume builder.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/fresher">
+                <Link to="/technical">
                   <Button size="lg" className="bg-resume-primary hover:bg-resume-secondary">
-                    <User className="mr-2 h-5 w-5" />
-                    I'm a Fresher
+                    <Wrench className="mr-2 h-5 w-5" />
+                    Technical Roles
                   </Button>
                 </Link>
-                <Link to="/experienced">
+                <Link to="/templates">
                   <Button size="lg" variant="outline">
-                    <Briefcase className="mr-2 h-5 w-5" />
-                    I'm Experienced
+                    <Hotel className="mr-2 h-5 w-5" />
+                    Non-Technical Roles
                   </Button>
                 </Link>
               </div>
@@ -87,14 +87,14 @@ const Index = () => {
               Stand out from the competition with an ATS-optimized resume.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Link to="/fresher">
+              <Link to="/technical">
                 <Button size="lg" className="bg-resume-primary hover:bg-resume-secondary">
-                  Start as Fresher
+                  Technical Roles
                 </Button>
               </Link>
-              <Link to="/experienced">
+              <Link to="/templates">
                 <Button size="lg" variant="outline">
-                  Start as Experienced
+                  Non-Technical Roles
                 </Button>
               </Link>
             </div>
